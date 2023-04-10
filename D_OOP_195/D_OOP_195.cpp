@@ -20,9 +20,9 @@ public:
 	void inputMk() {
 		cout << "\nMasukkan jumlah SKS = ";
 		cin >> sks;
-		cout << "\nMasukkan Kode MK = ";
+		cout << "Masukkan Kode MK = ";
 		cin >> kode;
-		cout << "\nMasukkan Nama MK = ";
+		cout << "Masukkan Nama MK = ";
 		cin >> namaMK;
 	}
 
@@ -34,5 +34,22 @@ public:
 };
 
 int main() {
+	Mahasiswa mhs;
+	Matakuliah MK;
+
+	cout << "\n<<Masukkan Data Mahasiswa>>" << endl;
+	cout << "\nMasukkan NIM = ";
+	cin >> mhs.nim;
+	cout << "Masukkan Nama = ";
+	cin >> mhs.nama;
+
+	cout << "\n<<Masukkan Data Mata Kuliah>>" << endl;
+	MK.inputMk();
+
+	cout << "\n<<Tampilan Data Mahasiswa>>" << endl;
+	mhs.tampil();
+
+	cout << "\n\n<<Tampilan Data Mata Kuliah>>";
+	MK.tampilMK();
 
 }
